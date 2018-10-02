@@ -1,0 +1,3 @@
+Income,good,5000#
+Income,honda,9000#
+Income,M2,7000#Income,newTest,500#Income,getTest,100#Income,gg,1000#Expense,ghh,100#Income,test,300#Expense,test2,200#

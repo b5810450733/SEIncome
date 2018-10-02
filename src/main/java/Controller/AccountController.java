@@ -3,17 +3,16 @@ package Controller;
 import Database.TextdbConnect;
 import Model.Amount;
 import Model.Income;
-import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
 
-import java.util.ArrayList;
+
 
 public class AccountController implements Showlist{
+
     @FXML
     TableColumn<Income, String> typetable;
 
@@ -111,6 +110,7 @@ public class AccountController implements Showlist{
     public void showAlllist(){
         typecolumn.setValue("Choose Type");
         typecolumn.setItems(typ);
+        ///
         typetable.setCellValueFactory(cellData->cellData.getValue().typeProperty());
         informtable.setCellValueFactory(cellData->cellData.getValue().commentProperty());
         amounttable.setCellValueFactory(cellData->cellData.getValue().incomeProperty());
